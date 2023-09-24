@@ -28,7 +28,7 @@ function updateExpenseList() {
     expenses.forEach((expense, index) => {
         const listItem = document.createElement('li');
         const formattedDate = expense.date.toLocaleDateString();
-        listItem.innerHTML = `<strong>${expense.description}</strong> ($${expense.amount.toFixed(2)}) on ${formattedDate} <button onclick="removeExpense(${index})">Delete</button>`;
+        listItem.innerHTML = `<strong>${expense.description}</strong> (₹${expense.amount.toFixed(2)}) on ${formattedDate} <button onclick="removeExpense(${index})">Delete</button>`;
         expenseList.appendChild(listItem);
     });
 }
@@ -37,8 +37,8 @@ function updateSummary() {
     const totalSpending = expenses.reduce((total, expense) => total + expense.amount, 0);
     const averageDailySpending = totalSpending / expenses.length || 0;
 
-    document.getElementById('total-spending').textContent = `$${totalSpending.toFixed(2)}`;
-    document.getElementById('average-daily-spending').textContent = `$${averageDailySpending.toFixed(2)}`;
+    document.getElementById('total-spending').textContent = `₹${totalSpending.toFixed(2)}`;
+    document.getElementById('average-daily-spending').textContent = `₹${averageDailySpending.toFixed(2)}`;
 }
 
 function removeExpense(index) {

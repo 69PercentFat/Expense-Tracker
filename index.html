@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Personal Finance Tracker</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <h1>Personal Finance Tracker</h1>
@@ -23,8 +23,15 @@
                 <!-- Expense items will be added here dynamically -->
             </ul>
         </div>
+        
+        <!-- Add the summary section here -->
+        <div id="summary">
+            <h2>Summary</h2>
+            <p>Total Spending: <span id="total-spending">₹0.00</span></p>
+            <p>Average Daily Spending: <span id="average-daily-spending">₹0.00</span></p>
+        </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
