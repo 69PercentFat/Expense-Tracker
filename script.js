@@ -27,7 +27,7 @@ function updateExpenseList() {
 
     expenses.forEach((expense, index) => {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `<strong>${expense.description}:</strong> $${expense.amount.toFixed(2)} <button onclick="removeExpense(${index})">Delete</button>`;
+        listItem.innerHTML = `<strong>${expense.description}:</strong> ₹${expense.amount.toFixed(2)} <button onclick="removeExpense(${index})">Delete</button>`;
         expenseList.appendChild(listItem);
     });
 }
