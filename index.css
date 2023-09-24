@@ -6,7 +6,7 @@ body, h1, h2, ul, p {
 
 /* Set a background color and font for the entire page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Use the 'Roboto' font */
     background-color: #f2f2f2;
     text-align: center;
     padding: 20px;
